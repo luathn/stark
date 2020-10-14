@@ -1,4 +1,4 @@
 ---
 layout: home
-title: Home
+title: Stark theme for Jekyll
 ---

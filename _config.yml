@@ -20,8 +20,7 @@
 
 title: STARK
 email: luat1203@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Start Jekyll theme
+description: Stark theme for Jekyll. I wrote it for my personal blog, you can use it if you like. Take a look at https://luathn.com
 # baseurl: "https://luathn.com"
 # url: "https://luathn.com"
 twitter_username: luat1203
