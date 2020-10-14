@@ -1,0 +1,17 @@
+<header class="container">
+  <div class="site-title">Luat</div>
+  <nav id="navbar">
+    <ul>
+      {% for item in site.data.menu %}
+        <li>
+          <a href="{{ item.link }}">
+            {{ item.name }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+  <div class="menu-button" onclick="handleMenuClick()">
+    <img src="assets/images/menu-outline.svg" width="40px" height="40px">
+  </div>
+</header>
