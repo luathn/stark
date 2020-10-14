@@ -1,0 +1,17 @@
+<header class="container">
+  <div class="site-title">{{ site.title }}</div>
+  <nav id="navbar">
+    <ul>
+      {% for item in site.data.menu %}
+        <li>
+          <a href="{{ item.link }}">
+            {{ item.name }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+  <div class="menu-button" onclick="handleMenuClick()">
+    <svg fill='currentColor' xmlns='http://www.w3.org/2000/svg' class='ionicon' viewBox='0 0 512 512'><title>Menu</title><path fill='none' stroke='currentColor' stroke-linecap='round' stroke-miterlimit='10' stroke-width='32' d='M80 160h352M80 256h352M80 352h352'/></svg>
+  </div>
+</header>
