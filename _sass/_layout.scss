@@ -3,7 +3,7 @@
 }
 
 body {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 a, a:visited, a:active {
@@ -17,16 +17,20 @@ a:hover {
 
 .container {
   max-width: $site-width;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 10px;
 }
+
+// Header ----------------------------------
 
 header {
   height: $header-height;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: auto;
-  font-size: 30px;
+  font-size: 1.6em;
+  border-bottom: 1px solid $light-gray;
 
   .site-title {
     font-weight: $normal-weight;
@@ -60,8 +64,47 @@ header {
   }
 }
 
+// Main ----------------------------------
+
+main {
+  margin: 50px 0;
+}
+
+.recent-post-title {
+  margin-bottom: 10px;
+}
+
+.post-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  padding: 7px 0;
+
+  .post-date {
+    padding-right: 15px;
+    color: $pure-black;
+    font-weight: $bold-weight;
+    min-width: 6.5em;
+  }
+
+  .post-title {
+    font-weight: $normal-weight;
+    // padding: 5px 10px 5px 0;
+    padding-right: 10px;
+    flex: 1 1;
+  }
+
+  .post-category {
+    color: $dark-gray;
+    font-size: 0.8em;
+    margin-left: auto;
+  }
+}
+
+
 // For mobile
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   #navbar {
     display: none;
   }
@@ -92,4 +135,30 @@ header {
     margin-top: auto;
     margin-bottom: auto;
   }
+
+  .post-item {
+    .post-date {
+      order: 1;
+      color: $medium-gray;
+      font-weight: $normal-weight;
+      font-size: 0.8em;
+      padding-right: 5px;
+    }
+
+    .post-title {
+      flex: 1 0 100%;
+      padding: 5px 10px 0 0;
+      order: 3;
+    }
+
+    .post-category {
+      order: 2;
+      padding-left: 0;
+      margin-left: 0;
+    }
+  }
+}
+
+// For tablet
+@media screen and (max-width: 768px) {
 }
