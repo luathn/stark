@@ -35,6 +35,10 @@ header {
   .site-title {
     font-weight: $normal-weight;
     margin: auto 0;
+
+    a {
+      color: $pure-black;
+    }
   }
 }
 
@@ -61,6 +65,19 @@ header {
 
   svg {
     color: $dark-gray;
+  }
+}
+
+// Author ----------------------------------
+
+#author {
+  max-width: $site-width * 0.8;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  text-align: center;
+
+  img {
+    margin-bottom: 20px;
   }
 }
 
@@ -106,6 +123,7 @@ main {
 
 footer {
   margin-top: 8em;
+  margin-bottom: 1em;
   font-size: 0.8em;
   text-align: center;
 }
@@ -164,6 +182,11 @@ footer {
       padding-left: 0;
       margin-left: 0;
     }
+  }
+
+  #author {
+    margin-top: 2em;
+    margin-bottom: 2em;
   }
 }
 
